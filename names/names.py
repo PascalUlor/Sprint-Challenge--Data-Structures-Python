@@ -31,4 +31,5 @@ print(f"runtime: {end_time - start_time} seconds")
 
 """
 Runtime of first solution has a runtime of O(n^2)
+New solution has a runtime of O(n)
 """
