@@ -17,11 +17,12 @@ duplicates = []
 #     for name_2 in names_2: #O(n)
 #         if name_1 == name_2:
 #             duplicates.append(name_1) #O(c)
-check = BinarySearchTree(names_1[0])
+# check = BinarySearchTree(names_1[0])
+check = dict()
 for name_1 in names_1:
-    check.insert(name_1)
+    check[name_1] = True
 for name_2 in names_2:
-    if check.contains(name_2):
+    if name_2 in check:
         duplicates.append(name_2)
 
 
